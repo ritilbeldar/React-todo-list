@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar-brand img {
+  height: 35px;
+}
+
+.home {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10vmax;
+}
+
+/* create page start */
+.Create {
+  font-family: 'Poppins', sans-serif;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  padding: 3vmax 1vmax;
+  width: 50%;
+  align-items: center;
+}
+
+.Create h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+.create-top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap: .3vmax;
+}
+
+.create-top h4 {
+  font-size: 20px;
+}
+
+.create-top h4 sup {
+  color: rgba(0, 0, 0, 0.393);
+}
+
+.create-top button {
+  background-color: transparent;
+  border: none;
+}
+
+.Create form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-end;
+  padding: .5vmax;
+  border: 1px solid rgba(0, 0, 0, 0.269);
+  border-radius: 10px;
+  margin-top: .5vmax;
+}
+
+.Create form div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.Create form input {
+  width: 100%;
+  font-size: 13px;
+  padding: .5vmax;
+  outline: none;
+  font-weight: 600;
+  color: black;
+  border: none;
+  height: max-content;
+}
+
+.Create form input::placeholder {
+  color: black;
+}
+
+#taskd {
+  text-wrap: wrap;
+  height: auto;
+}
+
+#taskd::placeholder {
+  color: rgba(0, 0, 0, 0.495);
+}
+
+#taskd:focus {
+  color: black;
+  font-weight: 400;
+}
+
+#date {
+  width: max-content;
+}
+
+/* create page end */
+
+
+/* show page start */
+
+.show {
+  background-color: rgba(0, 0, 0, 0.059);
+  width: 50%;
+  padding: 2vmax 1vmax 0 1vmax;
+}
+
+.show-bottom {
+  width: 100%;
+}
+
+.show-bottom ul {
+  max-height: 67vh;
+  overflow: auto;
+  margin-top: 1vmax;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: .5vmax;
+}
+
+.show-bottom ul::-webkit-scrollbar {
+  display: none;
+}
+
+.show-bottom ul li {
+  display: flex;
+  flex-direction: column;
+  gap: .8vmax;
+  width: 100%;
+  background-color: rgba(135, 207, 235, 0.295);
+  padding: 1vmax;
+  border-radius: 10px;
+}
+
+.show-bottom ul li div {
+  display: flex;
+  align-items: flex-start;
+  gap: 1vmax;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.show-bottom ul li div span {
+  display: flex;
+  align-items: flex-start;
+  gap: .5vmax;
+}
+
+.show-bottom ul li h6 sup {
+  color: rgba(0, 0, 0, 0.582);
+}
+
+.show-button {
+  display: flex;
+  gap: .5vmax;
+}
+
+.filter-button {
+  padding: .5vmax 2vmax;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.189);
+  transition: .5s;
+}
+
+.filter-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.active-filter {
+  background-color: black;
+  color: white;
+  padding: .5vmax 2vmax;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.189);
+  transition: .5s;
+}
+
+.ul {
+  display: flex;
+  flex-direction: column;
+  gap: .5vmax;
+}
+.number{
+  position: relative;
+  padding: 1vmax;
+  position: absolute;
+  right: 1vmax;
+}
+.number button{
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+}
+.number p{
+  background-color: red;
+  color: white;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  padding: .1vmax .5vmax;
+  border-radius: 50%;
+  top: .5vmax;
+  right: .4vmax;
+  
+}
+/* show page end */
